@@ -1,0 +1,11 @@
+{
+	"color_scheme": "Packages/Color Scheme - Default/Slush & Poppies.tmTheme",
+	"font_size": 9,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"scroll_speed": 0,
+	"always_show_minimap_viewport": true,
+	"draw_minimap_border": true
+}
