@@ -1,0 +1,17 @@
+
+
+// Put this in .../Packages/User/duplicate_line_up.sublime-macro 
+[
+	{
+		"args": null,
+		"command": "duplicate_line"
+	},
+	{
+		"args":
+		{
+			"by": "lines",
+			"forward": false
+		},
+		"command": "move"
+	},
+]

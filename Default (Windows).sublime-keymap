@@ -1,0 +1,38 @@
+[
+
+{ "keys": ["alt+shift+up"], "command": "expand_region" },
+{
+	"keys": ["alt+shift+down"],
+	"command": "expand_region",
+	"args": {"undo": true},
+	"context": [{ "key": "expand_region_soft_undo" }]
+	},
+	
+	{ "keys": ["ctrl+space"], "command": "auto_complete" },
+	{ "keys": ["ctrl+space"], "command": "replace_completion_with_auto_complete", "context":
+	[
+	{ "key": "last_command", "operator": "equal", "operand": "insert_best_completion" },
+	{ "key": "auto_complete_visible", "operator": "equal", "operand": false },
+	{ "key": "setting.tab_completion", "operator": "equal", "operand": true }
+	]
+	},
+	{ "keys": ["ctrl+d"], "command": "run_macro_file", "args": {"file": "Packages/User/delete-line.sublime-macro"} },
+
+	{ "keys": ["ctrl+shift+c"], "command": "toggle_comment", "args": { "block": false } },
+	{ "keys": ["ctrl+shift+c"], "command": "toggle_comment", "args": { "block": true } },
+
+	{ "keys": ["ctrl+shift+f"], "command": "reindent" , "args": {"single_line": false}},
+
+	{ "keys": ["alt+up"], "command": "swap_line_up" },
+	{ "keys": ["alt+down"], "command": "swap_line_down" },
+
+	{ "keys": ["ctrl+alt+down"], "command": "duplicate_line" },
+	{ "keys": ["ctrl+alt+up"], "command": "run_macro_file", "args": {"file": "Packages/User/duplicate_line_up.sublime-macro"} },
+	{ "keys": ["shift+ctrl+r"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
+	{ "keys": ["ctrl+shift+s"], "command": "save_all" },
+	{ "keys": ["ctrl+l"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
+
+	{ "keys": ["alt+shift+l"], "command": "reveal_in_side_bar"}
+
+
+	]
